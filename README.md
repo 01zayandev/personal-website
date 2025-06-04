@@ -1,2 +1,207 @@
-  Personal Webprofile
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maynard Bihasa Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #a18cd1, #fbc2eb);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      backdrop-filter: blur(10px);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #4b2d7f;
+    }
+
+    nav a {
+      color: #333;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: #4b2d7f;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      padding: 10rem 2rem 5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-img img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      border: 8px solid #fff;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      object-fit: cover;
+    }
+
+    .hero-content {
+      flex: 2;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .hero-content h1 span {
+      color: #4b2d7f;
+    }
+
+    .hero-content h2 {
+      font-size: 2rem;
+      color: #f1e1ff;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      line-height: 1.6;
+      color: #fdfdfd;
+      margin-bottom: 2rem;
+    }
+
+    .socials a {
+      margin: 0 0.6rem;
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .socials a:hover {
+      color: #4b2d7f;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: #4b2d7f;
+      color: white;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #38215a;
+    }
+
+    footer {
+      background: #2c1a47;
+      padding: 3rem 1rem;
+      color: #ddd;
+      text-align: center;
+    }
+
+    footer h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    footer p {
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto 1rem;
+    }
+
+    footer small {
+      display: block;
+      margin-top: 1rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Portfolio</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#contact" class="download-btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-img">
+      <img src="R.png" alt="Maynard Bihasa">
+    </div>
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Maynard</span></h1>
+      <h2>  Filipino Junior Developer</h2>
+      <p>I love creating elegant, animated, and fully responsive websites using modern technologies. Let's collaborate and build something extraordinary.</p>
+      <div class="socials">
+        <a href="https://facebook.com" target="_blank">🔵</a>
+        <a href="https://github.com" target="_blank">🐙</a>
+        <a href="https://linkedin.com" target="_blank">🔗</a>
+      </div>
+      <a href="#" class="download-btn">View My Resume</a>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Let's Connect</h3>
+    <p>Thank you for visiting my portfolio. Feel free to reach out if you'd like to work together or just say hello!</p>
+    <small>&copy; 2025 Maynard Bihasa. All rights reserved.</small>
+  </footer>
+</body>
+</html>
+
